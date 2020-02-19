@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Form from "./Components/Form";
+import Handlerevent from "./Components/Handlerevent";
+// import LIst from "./LIst";
+import Update from "./Components/Update";
+import Click from "./Components/Click";
+import Counter from "./Components/Counter";
+import ParComp from "./Components/ParComp";
+import Subscribe from "./Components/Subscribe";
+import Rhooks from './Components/RHooks';
 
 function App() {
+  // const names = ["srijan", "aryal", "anik", "eklavya"];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Form></Form>
+      <Handlerevent></Handlerevent>
+      <Update></Update>
+      <Click></Click>
+      <Counter />
+      <ParComp />
+      <Subscribe />
+      {/* <h1>{this.props.car}</h1>
+      <h2>{this.props.bike}</h2> */}
+    <Rhooks></Rhooks>
     </div>
   );
 }
